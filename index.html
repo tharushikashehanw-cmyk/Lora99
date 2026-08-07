@@ -1,58 +1,273 @@
 
+
 <!DOCTYPE html>
-<html lang="si">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lora99 | Premium Girls Clothing Store</title>
-    <style>
-        body { font-family: 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 0; background-color: #0b0b0b; color: #fff; }
-        header { background-color: #000; padding: 20px 15px; text-align: center; border-bottom: 2px solid #d4af37; }
-        .logo-img { width: 130px; height: 130px; border-radius: 50%; border: 2px solid #d4af37; object-fit: cover; }
-        .nav { margin-top: 15px; }
-        .nav a { margin: 0 8px; text-decoration: none; color: #d4af37; font-weight: 600; font-size: 13px; text-transform: uppercase; }
-        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1000'); background-size: cover; color: white; text-align: center; padding: 50px 20px; }
-        .hero h1 { font-size: 24px; color: #d4af37; margin-bottom: 10px; }
-        .products { display: flex; justify-content: center; gap: 20px; padding: 30px 15px; flex-wrap: wrap; }
-        .card { background: #141414; border: 1px solid #2a2a2a; border-radius: 12px; width: 280px; padding: 15px; text-align: center; }
-        .card img { width: 100%; height: 300px; object-fit: cover; border-radius: 8px; }
-        .card h3 { color: #fff; font-size: 18px; margin: 10px 0; }
-        .price { color: #d4af37; font-weight: bold; font-size: 20px; margin-bottom: 15px; }
-        .btn-wa { background: #25D366; color: white; padding: 12px 20px; border: none; border-radius: 25px; font-weight: bold; text-decoration: none; display: block; }
-        footer { background: #000; color: #888; text-align: center; padding: 20px; margin-top: 30px; font-size: 12px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lora99 | Premium Girls Clothing Store</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+}
+
+header{
+    background:#000;
+    text-align:center;
+    padding:20px;
+}
+
+.logo-img{
+    width:160px;
+    height:auto;
+    margin-bottom:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+.hero{
+    background:linear-gradient(to right,#000,#333);
+    padding:80px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    color:gold;
+    font-size:42px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+    color:#ddd;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.products{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:50px 20px;
+}
+
+.card{
+    background:#1a1a1a;
+    width:280px;
+    border-radius:10px;
+    overflow:hidden;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.price{
+    color:gold;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.buy-btn{
+    display:inline-block;
+    margin-bottom:20px;
+    padding:10px 20px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    border-radius:25px;
+}
+
+footer{
+    background:#000;
+    padding:20px;
+    text-align:center;
+    color:#999;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.jpg" alt="Lora99 Logo" class="logo-img">
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Products</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+<h1>Welcome to Lora99</h1>
+<p>Premium Girls Fashion Collection</p>
+<a href="#products" class="btn">Shop Now</a>
+</section>
+
+<section class="products" id="products">
+
+<div class="card">
+<img src="dress1.jpg" alt="Dress 1">
+<h3>Elegant Dress</h3>
+<p class="price">Rs.4500</p>
+<a href="#" class="buy-btn">Buy Now</a>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+    padding:0;
+}
+
+.contact{
+    max-width:700px;
+    margin:50px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.contact h2{
+    text-align:center;
+    color:#2c3e50;
+    margin-bottom:20px;
+}
+
+.contact p{
+    font-size:18px;
+    line-height:1.8;
+    color:#333;
+}
+
+.contact strong{
+    color:#000;
+}
+
+form{
+    margin-top:25px;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+button{
+    background:#007BFF;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+</style>
+
 </head>
 <body>
-    <header>
-        <img src="IMG-20260806-WA0001.jpg" alt="Lora99 Clothing" class="logo-img">
-        <div class="nav">
-            <a href="#">Home</a>
-            <a href="#">Dresses</a>
-            <a href="#">Tops</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
-        </div>
-    </header>
-    <section class="hero">
-        <h1>OWN YOUR STYLE.<br>LIVE YOUR CONFIDENCE.</h1>
-        <p>Premium Girls Clothing Collection in Sri Lanka</p>
-    </section>
-    <section class="products">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=600" alt="Casual Dress">
-            <h3>Floral Summer Dress</h3>
-            <div class="price">Rs. 3,250</div>
-            <a href="https://wa.me/" class="btn-wa">Order via WhatsApp</a>
-        </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1551803091-e20673f15770?q=80&w=600" alt="Party Top">
-            <h3>Elegant Party Top</h3>
-            <div class="price">Rs. 2,450</div>
-            <a href="https://wa.me/" class="btn-wa">Order via WhatsApp</a>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2026 Lora99 Clothing. All Rights Reserved.</p>
-    </footer>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+
+    <p><strong>Owners:</strong><br>
+    W.A. Dilsha Madushani<br>
+    R. Kasuri Kalsari</p>
+
+    <p><strong>Email:</strong><br>
+    tharushikashehanw@gmail.com</p>
+
+    <p><strong>Phone:</strong><br>
+    078 957 6656</p>
+
+    <p><strong>Address:</strong><br>
+    Kosnathota, Godakawela, Sri Lanka</p>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+</body>
+</html>
+<div class="card">
+<img src="dress2.jpg" alt="Dress 2">
+<h3>Casual Dress</h3>
+<p class="price">Rs.3800</p>
+<a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="card">
+<img src="dress3.jpg" alt="Dress 3">
+<h3>Party Dress</h3>
+<p class="price">Rs.5200</p>
+<a href="#" class="buy-btn">Buy Now</a>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Lora99. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
