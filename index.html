@@ -33,8 +33,7 @@ a {
 }
 
 
-/* ================= HEADER ================= */
-
+/* HEADER */
 header {
     position: sticky;
     top: 0;
@@ -95,8 +94,7 @@ nav a:hover {
 }
 
 
-/* ================= HERO ================= */
-
+/* HERO */
 .hero {
     min-height: 80vh;
     display: grid;
@@ -166,8 +164,7 @@ nav a:hover {
 }
 
 
-/* ================= GENERAL SECTIONS ================= */
-
+/* GENERAL SECTIONS */
 section {
     padding: 80px 6%;
 }
@@ -188,8 +185,7 @@ section {
 }
 
 
-/* ================= ABOUT ================= */
-
+/* ABOUT */
 .about-container {
     max-width: 1150px;
     margin: auto;
@@ -228,8 +224,7 @@ section {
 }
 
 
-/* ================= COLLECTION ================= */
-
+/* COLLECTION */
 .collection {
     background: #faf3f0;
 }
@@ -275,8 +270,7 @@ section {
 }
 
 
-/* ================= FEATURES ================= */
-
+/* FEATURES */
 .features {
     max-width: 1150px;
     margin: auto;
@@ -308,8 +302,7 @@ section {
 }
 
 
-/* ================= SHIPPING ================= */
-
+/* SHIPPING */
 .shipping {
     background: #f3ebe7;
 }
@@ -343,8 +336,7 @@ section {
 }
 
 
-/* ================= CONTACT ================= */
-
+/* CONTACT */
 .contact-container {
     max-width: 1150px;
     margin: auto;
@@ -381,9 +373,6 @@ section {
     color: #c06b76;
 }
 
-
-/* QUICK BUTTONS */
-
 .quick-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -402,9 +391,6 @@ section {
 .quick-buttons a:hover {
     background: #f6eeee;
 }
-
-
-/* FORM */
 
 .contact-form input,
 .contact-form select,
@@ -457,8 +443,7 @@ section {
 }
 
 
-/* ================= FOOTER ================= */
-
+/* FOOTER */
 footer {
     background: #181818;
     color: white;
@@ -505,90 +490,34 @@ footer p {
 }
 
 
-/* ================= MOBILE ================= */
-
+/* MOBILE */
 @media(max-width:850px) {
-    nav {
-        gap: 12px;
-    }
-
-    nav a {
-        font-size: 12px;
-    }
-
-    .hero {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-image {
-        height: 500px;
-    }
-
-    .about-container,
-    .shipping-container,
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .features {
-        grid-template-columns: repeat(2,1fr);
-    }
+    nav { gap: 12px; }
+    nav a { font-size: 12px; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-image { height: 500px; }
+    .about-container, .shipping-container, .contact-container { grid-template-columns: 1fr; }
+    .gallery { grid-template-columns: repeat(2,1fr); }
+    .features { grid-template-columns: repeat(2,1fr); }
 }
 
-
 @media(max-width:550px) {
-    .navbar {
-        flex-direction: column;
-        padding: 12px;
-    }
-
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero {
-        padding: 45px 5%;
-    }
-
-    .hero-image {
-        height: 450px;
-    }
-
-    section {
-        padding: 60px 5%;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-card img {
-        height: 500px;
-    }
-
-    .features {
-        grid-template-columns: 1fr;
-    }
-
-    .quick-buttons {
-        grid-template-columns: 1fr;
-    }
+    .navbar { flex-direction: column; padding: 12px; }
+    nav { flex-wrap: wrap; justify-content: center; }
+    .hero { padding: 45px 5%; }
+    .hero-image { height: 450px; }
+    section { padding: 60px 5%; }
+    .gallery { grid-template-columns: 1fr; }
+    .gallery-card img { height: 500px; }
+    .features { grid-template-columns: 1fr; }
+    .quick-buttons { grid-template-columns: 1fr; }
 }
 
 </style>
 </head>
-
-
 <body>
 
-
-<!-- ================= HEADER ================= -->
-
+<!-- HEADER -->
 <header>
 <div class="navbar">
     <a href="#home" class="logo-area">
@@ -610,9 +539,7 @@ footer p {
 </header>
 
 
-
-<!-- ================= HOME ================= -->
-
+<!-- HOME -->
 <section class="hero" id="home">
 
 <div class="hero-text">
@@ -640,9 +567,7 @@ footer p {
 </section>
 
 
-
-<!-- ================= ABOUT ================= -->
-
+<!-- ABOUT -->
 <section id="about">
 
 <div class="section-title">
@@ -717,9 +642,7 @@ footer p {
 </section>
 
 
-
-<!-- ================= COLLECTION ================= -->
-
+<!-- COLLECTION -->
 <section class="collection" id="collection">
 
 <div class="section-title">
@@ -796,9 +719,7 @@ footer p {
 </section>
 
 
-
-<!-- ================= FEATURES ================= -->
-
+<!-- FEATURES -->
 <section>
 
 <div class="section-title">
@@ -836,9 +757,7 @@ footer p {
 </section>
 
 
-
-<!-- ================= SHIPPING ================= -->
-
+<!-- SHIPPING -->
 <section class="shipping" id="shipping">
 
 <div class="section-title">
@@ -872,9 +791,7 @@ footer p {
 </section>
 
 
-
-<!-- ================= CONTACT ================= -->
-
+<!-- CONTACT -->
 <section id="contact">
 
 <div class="section-title">
@@ -960,9 +877,7 @@ footer p {
 </section>
 
 
-
-<!-- ================= FOOTER ================= -->
-
+<!-- FOOTER -->
 <footer>
     <img src="logo.jpg" alt="Lora99 Logo" class="footer-logo">
     <h2>Lora99</h2>
