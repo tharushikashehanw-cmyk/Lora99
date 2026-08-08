@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +17,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 85px;
 }
 
 body {
@@ -117,6 +117,19 @@ nav a:hover {
             #fff5f3,
             #f5e9e5
         );
+}
+
+.hero-badge {
+    margin-bottom: 20px;
+}
+
+.hero-badge img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 25px rgba(192, 107, 118, 0.25);
+    border: 3px solid #ffffff;
 }
 
 .hero-text h1 {
@@ -285,9 +298,16 @@ section {
 .gallery-card p {
     text-align: center;
 
-    padding: 12px;
+    padding: 8px 12px 2px 12px;
 
     font-weight: bold;
+}
+
+.gallery-card .price {
+    color: #c06b76;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 12px;
 }
 
 
@@ -450,6 +470,7 @@ section {
 /* FORM */
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
     width: 100%;
 
@@ -468,7 +489,13 @@ section {
     outline: none;
 }
 
+.contact-form select {
+    background: white;
+    color: #333;
+}
+
 .contact-form input:focus,
+.contact-form select:focus,
 .contact-form textarea:focus {
     border-color: #25D366;
 }
@@ -704,6 +731,10 @@ footer p {
 
 <div class="hero-text">
 
+    <div class="hero-badge">
+        <img src="logo.jpg" alt="Lora99 Badge Logo">
+    </div>
+
     <h1>Lora99</h1>
 
     <h2>
@@ -891,6 +922,7 @@ footer p {
     >
 
     <p>Collection 01</p>
+    <p class="price">Rs. 3,300</p>
 
 </div>
 
@@ -904,6 +936,7 @@ footer p {
     >
 
     <p>Collection 02</p>
+    <p class="price">Rs. 2,800</p>
 
 </div>
 
@@ -917,6 +950,7 @@ footer p {
     >
 
     <p>Collection 03</p>
+    <p class="price">Rs. 2,800</p>
 
 </div>
 
@@ -930,6 +964,7 @@ footer p {
     >
 
     <p>Collection 04</p>
+    <p class="price">Rs. 3,700</p>
 
 </div>
 
@@ -1198,6 +1233,7 @@ footer p {
         <a
             href="https://wa.me/94786477227"
             target="_blank"
+            rel="noopener noreferrer"
         >
 
             +94 78 647 7227
@@ -1227,6 +1263,7 @@ footer p {
         <a
             href="https://www.facebook.com/share/1Bds9rnUnh/?mibextid=wwXIfr"
             target="_blank"
+            rel="noopener noreferrer"
         >
 
             Lora99 on Facebook
@@ -1244,6 +1281,7 @@ footer p {
         <a
             href="https://www.tiktok.com/search?q=Lora99"
             target="_blank"
+            rel="noopener noreferrer"
         >
 
             Lora99 on TikTok
@@ -1266,6 +1304,7 @@ footer p {
         <a
             href="https://wa.me/94786477227"
             target="_blank"
+            rel="noopener noreferrer"
         >
             💬 WhatsApp
         </a>
@@ -1279,6 +1318,7 @@ footer p {
         <a
             href="https://www.google.com/maps/search/?api=1&query=Kosnathota%2C%20Godakawela%2C%20Sri%20Lanka"
             target="_blank"
+            rel="noopener noreferrer"
         >
             📍 Location
         </a>
@@ -1298,9 +1338,7 @@ footer p {
     </h3>
 
 
-    <form
-        onsubmit="sendToWhatsApp(event)"
-    >
+    <form onsubmit="sendToWhatsApp(event)">
 
 
         <input
@@ -1326,10 +1364,20 @@ footer p {
         >
 
 
+        <select id="selectedItem">
+            <option value="">Select an Item / Dress (Optional)</option>
+            <option value="Collection 01 (WA0001) - Rs. 3,300">Collection 01 (WA0001) - Rs. 3,300</option>
+            <option value="Collection 02 (WA0002) - Rs. 2,800">Collection 02 (WA0002) - Rs. 2,800</option>
+            <option value="Collection 03 (WA0003) - Rs. 2,800">Collection 03 (WA0003) - Rs. 2,800</option>
+            <option value="Collection 04 (WA0004) - Rs. 3,700">Collection 04 (WA0004) - Rs. 3,700</option>
+            <option value="General Inquiry / Other">General Inquiry / Other</option>
+        </select>
+
+
         <textarea
             id="message"
-            rows="6"
-            placeholder="Your Message"
+            rows="5"
+            placeholder="Your Message (e.g., Preferred size, color or delivery info)"
             required
         ></textarea>
 
@@ -1389,6 +1437,7 @@ footer p {
         <a
             href="https://www.facebook.com/share/1Bds9rnUnh/?mibextid=wwXIfr"
             target="_blank"
+            rel="noopener noreferrer"
         >
             Facebook
         </a>
@@ -1397,6 +1446,7 @@ footer p {
         <a
             href="https://www.tiktok.com/search?q=Lora99"
             target="_blank"
+            rel="noopener noreferrer"
         >
             TikTok
         </a>
@@ -1405,6 +1455,7 @@ footer p {
         <a
             href="https://wa.me/94786477227"
             target="_blank"
+            rel="noopener noreferrer"
         >
             WhatsApp
         </a>
@@ -1443,6 +1494,10 @@ function sendToWhatsApp(event) {
         document.getElementById("visitorPhone").value.trim();
 
 
+    const selectedItem =
+        document.getElementById("selectedItem").value;
+
+
     const message =
         document.getElementById("message").value.trim();
 
@@ -1453,7 +1508,7 @@ function sendToWhatsApp(event) {
         "94786477227";
 
 
-    const whatsappMessage =
+    let whatsappMessage =
 
         "🌸 Lora99 Website Enquiry\n\n" +
 
@@ -1467,10 +1522,13 @@ function sendToWhatsApp(event) {
 
         "📱 Phone: " +
         (phone || "Not provided") +
-        "\n" +
+        "\n";
 
-        "💬 Message: " +
-        message;
+    if (selectedItem) {
+        whatsappMessage += "👗 Selected Item: " + selectedItem + "\n";
+    }
+
+    whatsappMessage += "💬 Message: " + message;
 
 
     const whatsappURL =
