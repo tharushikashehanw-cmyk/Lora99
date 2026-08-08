@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Lora99 | Women's Fashion</title>
+<title>Lora99 | Premium Women's Fashion</title>
 
 <style>
 
@@ -21,9 +21,9 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #fffaf8;
-    color: #333;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0d0d0d;
+    color: #e6e6e6;
     line-height: 1.6;
 }
 
@@ -32,14 +32,14 @@ a {
     color: inherit;
 }
 
-
 /* HEADER */
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255,255,255,0.97);
-    border-bottom: 1px solid #eee;
+    background: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #282828;
 }
 
 .navbar {
@@ -63,6 +63,7 @@ header {
     height: 58px;
     object-fit: contain;
     border-radius: 50%;
+    border: 2px solid #d4af37;
 }
 
 .logo-name {
@@ -70,13 +71,14 @@ header {
     font-size: 28px;
     font-weight: bold;
     letter-spacing: 2px;
+    color: #ffffff;
 }
 
 .logo-subtitle {
     display: block;
     font-size: 10px;
     letter-spacing: 2px;
-    color: #777;
+    color: #d4af37;
 }
 
 nav {
@@ -87,45 +89,20 @@ nav {
 nav a {
     font-weight: bold;
     font-size: 14px;
+    color: #cccccc;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #c06b76;
+    color: #d4af37;
 }
 
-
 /* HERO */
-    <!-- HERO SECTION -->
-<section class="hero" id="home" style="text-align: center; padding: 50px 20px; background: #fff5f3;">
-
-    <!-- LOGO BADGE -->
-    <div style="margin-bottom: 20px;">
-        <img src="logo.jpg" alt="Lora99 Logo" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
-    </div>
-
-    <!-- MAIN TITLE & TEXT -->
-    <h1 style="font-family: Georgia, serif; font-size: 48px; margin-bottom: 10px; color: #222;">Lora99</h1>
-    <h2 style="font-size: 20px; font-weight: normal; color: #555; margin-bottom: 15px;">Redefining Everyday Elegance for Women.</h2>
-    <p style="max-width: 650px; margin: 0 auto 25px auto; color: #666; font-size: 16px; line-height: 1.6;">
-        At Lora99, we believe that fashion is more than just clothing—it’s an expression of your unique personality, style, and confidence. Discover modern women's fashion combining style, comfort and affordable luxury.
-    </p>
-
-    <!-- EXPLORE OUR COLLECTION BUTTON -->
-    <div style="margin-bottom: 35px;">
-        <a href="#collection" style="display: inline-block; padding: 14px 30px; background: #222; color: #fff; border-radius: 30px; font-weight: bold; text-decoration: none;">Explore Our Collection</a>
-    </div>
-
-    <!-- EXPLORE OUR COLLECTION එකට හරියටම යටින් වැටෙන WA0000.JPG IMAGE EKA -->
-    <div style="max-width: 850px; margin: 0 auto; border-radius: 16px; overflow: hidden; box-shadow: 0 12px 35px rgba(0,0,0,0.12);">
-        <img src="WA0000.jpg" alt="Lora99 Collection" style="width: 100%; height: auto; display: block;">
-    </div>
-
-</section>
-
 .hero {
-    padding: 70px 6%;
-    background: linear-gradient(135deg, #fff5f3, #f5e9e5);
+    padding: 80px 6%;
+    background: radial-gradient(circle at center, #1a1a1a 0%, #0d0d0d 100%);
     text-align: center;
+    border-bottom: 1px solid #222;
 }
 
 .hero-content {
@@ -142,8 +119,8 @@ nav a:hover {
     height: 130px;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 8px 25px rgba(192, 107, 118, 0.25);
-    border: 3px solid #ffffff;
+    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.25);
+    border: 3px solid #d4af37;
 }
 
 .hero-text h1 {
@@ -151,40 +128,46 @@ nav a:hover {
     font-size: clamp(45px, 7vw, 80px);
     line-height: 1;
     margin-bottom: 15px;
+    color: #ffffff;
+    letter-spacing: 1px;
 }
 
 .hero-text h2 {
     font-size: 22px;
     margin-bottom: 15px;
+    color: #d4af37;
+    font-weight: 300;
 }
 
 .hero-text p {
-    color: #555;
+    color: #aaaaaa;
     font-size: 17px;
     margin-bottom: 25px;
 }
 
 .hero-button {
     display: inline-block;
-    padding: 14px 28px;
+    padding: 14px 32px;
     border-radius: 30px;
-    background: #222;
-    color: white;
+    background: linear-gradient(135deg, #d4af37, #aa820a);
+    color: #000000;
     font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .hero-button:hover {
-    background: #c06b76;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
 }
 
-/* WA0000 IMAGE PLACEMENT BELOW HERO BUTTON */
 .hero-image-box {
     max-width: 900px;
     margin: 40px auto 0 auto;
     height: 520px;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    border: 1px solid #282828;
 }
 
 .hero-image-box img {
@@ -192,7 +175,6 @@ nav a:hover {
     height: 100%;
     object-fit: cover;
 }
-
 
 /* GENERAL SECTIONS */
 section {
@@ -208,12 +190,12 @@ section {
     font-family: Georgia, serif;
     font-size: 38px;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
 .section-title p {
-    color: #666;
+    color: #888888;
 }
-
 
 /* ABOUT */
 .about-container {
@@ -228,17 +210,19 @@ section {
     font-family: Georgia, serif;
     font-size: 28px;
     margin-bottom: 12px;
+    color: #d4af37;
 }
 
 .about-container p {
-    color: #555;
+    color: #bbbbbb;
 }
 
 .why-box {
-    background: white;
+    background: #161616;
     padding: 30px;
     border-radius: 18px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    border: 1px solid #252525;
 }
 
 .why-box h3 {
@@ -251,12 +235,12 @@ section {
 
 .why-box li {
     margin-bottom: 13px;
+    color: #cccccc;
 }
-
 
 /* COLLECTION */
 .collection {
-    background: #faf3f0;
+    background: #121212;
 }
 
 .gallery {
@@ -268,10 +252,17 @@ section {
 }
 
 .gallery-card {
-    background: white;
+    background: #181818;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 7px 22px rgba(0,0,0,0.08);
+    box-shadow: 0 7px 22px rgba(0,0,0,0.6);
+    border: 1px solid #262626;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
 }
 
 .gallery-card img {
@@ -288,17 +279,17 @@ section {
 
 .gallery-card p {
     text-align: center;
-    padding: 8px 12px 2px 12px;
+    padding: 12px 12px 2px 12px;
     font-weight: bold;
+    color: #ffffff;
 }
 
 .gallery-card .price {
-    color: #c06b76;
+    color: #d4af37;
     font-size: 18px;
     text-align: center;
     padding-bottom: 12px;
 }
-
 
 /* FEATURES */
 .features {
@@ -310,11 +301,12 @@ section {
 }
 
 .feature {
-    background: white;
+    background: #161616;
     text-align: center;
     padding: 28px 20px;
     border-radius: 15px;
-    box-shadow: 0 7px 22px rgba(0,0,0,0.06);
+    box-shadow: 0 7px 22px rgba(0,0,0,0.4);
+    border: 1px solid #252525;
 }
 
 .feature-icon {
@@ -324,17 +316,17 @@ section {
 
 .feature h3 {
     margin-bottom: 7px;
+    color: #ffffff;
 }
 
 .feature p {
     font-size: 14px;
-    color: #666;
+    color: #999999;
 }
-
 
 /* SHIPPING */
 .shipping {
-    background: #f3ebe7;
+    background: #121212;
 }
 
 .shipping-container {
@@ -346,15 +338,17 @@ section {
 }
 
 .shipping-box {
-    background: white;
+    background: #181818;
     padding: 30px;
     border-radius: 16px;
+    border: 1px solid #262626;
 }
 
 .shipping-box h3 {
     font-family: Georgia, serif;
     font-size: 26px;
     margin-bottom: 15px;
+    color: #d4af37;
 }
 
 .shipping-box ul {
@@ -363,8 +357,8 @@ section {
 
 .shipping-box li {
     margin-bottom: 12px;
+    color: #cccccc;
 }
-
 
 /* CONTACT */
 .contact-container {
@@ -377,10 +371,11 @@ section {
 
 .contact-info,
 .contact-form {
-    background: white;
+    background: #161616;
     padding: 30px;
     border-radius: 18px;
-    box-shadow: 0 7px 25px rgba(0,0,0,0.07);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.5);
+    border: 1px solid #252525;
 }
 
 .contact-info h3,
@@ -388,19 +383,22 @@ section {
     font-family: Georgia, serif;
     font-size: 27px;
     margin-bottom: 22px;
+    color: #ffffff;
 }
 
 .contact-item {
     margin-bottom: 18px;
+    color: #cccccc;
 }
 
 .contact-item strong {
     display: block;
     margin-bottom: 3px;
+    color: #d4af37;
 }
 
 .contact-item a:hover {
-    color: #c06b76;
+    color: #d4af37;
 }
 
 .quick-buttons {
@@ -414,12 +412,16 @@ section {
     text-align: center;
     padding: 12px;
     border-radius: 9px;
-    border: 1px solid #ddd;
+    border: 1px solid #333333;
+    background: #222222;
+    color: #ffffff;
     font-weight: bold;
+    transition: background 0.3s;
 }
 
 .quick-buttons a:hover {
-    background: #f6eeee;
+    background: #2d2d2d;
+    border-color: #d4af37;
 }
 
 .contact-form input,
@@ -428,16 +430,18 @@ section {
     width: 100%;
     padding: 14px;
     margin-bottom: 14px;
-    border: 1px solid #ddd;
+    border: 1px solid #333333;
     border-radius: 9px;
     font-size: 15px;
     font-family: Arial, sans-serif;
     outline: none;
+    background: #0d0d0d;
+    color: #ffffff;
 }
 
-.contact-form select {
-    background: white;
-    color: #333;
+.contact-form select option {
+    background: #161616;
+    color: #ffffff;
 }
 
 .contact-form input:focus,
@@ -460,6 +464,7 @@ section {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 .whatsapp-button:hover {
@@ -468,17 +473,17 @@ section {
 
 .form-note {
     font-size: 12px;
-    color: #777;
+    color: #777777;
     margin-top: 10px;
 }
 
-
 /* FOOTER */
 footer {
-    background: #181818;
+    background: #050505;
     color: white;
     text-align: center;
     padding: 40px 20px;
+    border-top: 1px solid #1a1a1a;
 }
 
 .footer-logo {
@@ -487,15 +492,17 @@ footer {
     object-fit: contain;
     border-radius: 50%;
     margin-bottom: 10px;
+    border: 1px solid #d4af37;
 }
 
 footer h2 {
     font-family: Georgia, serif;
     margin-bottom: 5px;
+    color: #ffffff;
 }
 
 footer p {
-    color: #ccc;
+    color: #888888;
     font-size: 14px;
     margin: 5px 0;
 }
@@ -509,16 +516,18 @@ footer p {
 }
 
 .social-links a {
-    border: 1px solid #555;
+    border: 1px solid #333333;
     padding: 8px 15px;
     border-radius: 20px;
+    background: #111111;
+    transition: all 0.3s;
 }
 
 .social-links a:hover {
-    background: white;
-    color: #222;
+    background: #d4af37;
+    color: #000000;
+    border-color: #d4af37;
 }
-
 
 /* MOBILE */
 @media(max-width:850px) {
@@ -647,22 +656,22 @@ footer p {
     <h3>Why Choose Lora99?</h3>
     <ul>
         <li>
-            <strong>Trendy & Timeless Designs:</strong>
+            <strong style="color: #ffffff;">Trendy & Timeless Designs:</strong>
             Carefully curated fashion items that match
             international trends while staying versatile.
         </li>
         <li>
-            <strong>Premium Quality & Comfort:</strong>
+            <strong style="color: #ffffff;">Premium Quality & Comfort:</strong>
             High-grade fabrics crafted to deliver
             long-lasting durability and all-day comfort.
         </li>
         <li>
-            <strong>Affordable Luxury:</strong>
+            <strong style="color: #ffffff;">Affordable Luxury:</strong>
             Premium styles designed to give you an
             upscale look without the high price tag.
         </li>
         <li>
-            <strong>Seamless Experience:</strong>
+            <strong style="color: #ffffff;">Seamless Experience:</strong>
             Fast, reliable delivery and dedicated
             customer support to ensure your shopping
             experience is flawless.
@@ -713,31 +722,31 @@ footer p {
 
 
 <!-- SINHALA DESCRIPTION CARD -->
-<div style="max-width: 800px; margin: 40px auto 0 auto; background: #ffffff; padding: 30px 25px; border-radius: 18px; text-align: center; box-shadow: 0 8px 25px rgba(0,0,0,0.06); border: 1px solid #f0e2de;">
+<div style="max-width: 800px; margin: 40px auto 0 auto; background: #161616; padding: 30px 25px; border-radius: 18px; text-align: center; box-shadow: 0 8px 25px rgba(0,0,0,0.6); border: 1px solid #d4af37;">
 
-    <h3 style="font-family: Georgia, serif; font-size: 24px; color: #c06b76; margin-bottom: 12px; letter-spacing: 1px;">
+    <h3 style="font-family: Georgia, serif; font-size: 24px; color: #d4af37; margin-bottom: 12px; letter-spacing: 1px;">
         🤍 LORA99 CLOTHING 🤍
     </h3>
 
-    <p style="font-size: 16px; color: #444; font-weight: bold; margin-bottom: 20px; line-height: 1.6;">
+    <p style="font-size: 16px; color: #ffffff; font-weight: bold; margin-bottom: 20px; line-height: 1.6;">
         ඔබේ සුන්දරත්වය තවත් ඉස්මතු කරන, ඔබේ පෞරුෂයට ගැලපෙන අලංකාර විලාසිතා… ✨
     </p>
 
     <ul style="list-style: none; padding: 0; margin: 0 auto 20px auto; display: inline-block; text-align: left; line-height: 2;">
-        <li style="font-size: 15px; color: #555;">👗 ආකර්ෂණීය හා නවීන කාන්තා ඇඳුම්</li>
-        <li style="font-size: 15px; color: #555;">💎 උසස් තත්ත්වය • අලංකාර නිමාව</li>
-        <li style="font-size: 15px; color: #555;">🌸 සෑම අවස්ථාවකටම ගැලපෙන සුන්දර විලාසිතා</li>
-        <li style="font-size: 15px; color: #555;">🤍 ඔබ වෙනුවෙන්ම තෝරාගත් අලංකාර මෝස්තර</li>
+        <li style="font-size: 15px; color: #cccccc;">👗 ආකර්ෂණීය හා නවීන කාන්තා ඇඳුම්</li>
+        <li style="font-size: 15px; color: #cccccc;">💎 උසස් තත්ත්වය • අලංකාර නිමාව</li>
+        <li style="font-size: 15px; color: #cccccc;">🌸 සෑම අවස්ථාවකටම ගැලපෙන සුන්දර විලාසිතා</li>
+        <li style="font-size: 15px; color: #cccccc;">🤍 ඔබ වෙනුවෙන්ම තෝරාගත් අලංකාර මෝස්තර</li>
     </ul>
 
-    <div style="border-top: 1px dashed #e0d0cc; padding-top: 15px; margin-top: 10px;">
-        <p style="font-size: 15px; color: #333; margin-bottom: 6px;">
+    <div style="border-top: 1px dashed #333333; padding-top: 15px; margin-top: 10px;">
+        <p style="font-size: 15px; color: #aaaaaa; margin-bottom: 6px;">
             📩 ඔබ කැමති මෝස්තරය ඇණවුම් කිරීමට අපට පණිවිඩයක් එවන්න
         </p>
-        <p style="font-size: 15px; color: #333; font-weight: bold; margin-bottom: 15px;">
+        <p style="font-size: 15px; color: #ffffff; font-weight: bold; margin-bottom: 15px;">
             🚚 දිවයින පුරා බෙදාහැරීම් 🇱🇰
         </p>
-        <p style="font-family: Georgia, serif; font-style: italic; color: #c06b76; font-size: 15px; margin: 0;">
+        <p style="font-family: Georgia, serif; font-style: italic; color: #d4af37; font-size: 15px; margin: 0;">
             ✨ ඔබ අඳින ඇඳුමට වඩා, ඔබේ විලාසිතාවයි අපේ වටිනාකම. ✨
         </p>
     </div>
@@ -803,8 +812,8 @@ footer p {
 <div class="shipping-box">
     <h3>🚚 Shipping & Delivery</h3>
     <ul>
-        <li><strong>Islandwide Delivery:</strong> 2 - 4 Working Days.</li>
-        <li><strong>Easy Exchanges:</strong> 7-day hassle-free exchange policy for sizing issues.</li>
+        <li><strong style="color: #ffffff;">Islandwide Delivery:</strong> 2 - 4 Working Days.</li>
+        <li><strong style="color: #ffffff;">Easy Exchanges:</strong> 7-day hassle-free exchange policy for sizing issues.</li>
         <li>Orders are prepared and dispatched with care.</li>
         <li>Contact us through WhatsApp for order and delivery questions.</li>
     </ul>
@@ -854,7 +863,7 @@ footer p {
     </div>
 
     <div class="contact-item">
-        <strong>WhatsApp:</strong>
+        <strong>WhatsApp Direct:</strong>
         <a href="https://wa.me/94786477227" target="_blank" rel="noopener noreferrer">+94 78 647 7227</a>
     </div>
 
@@ -869,13 +878,14 @@ footer p {
     </div>
 
     <div class="contact-item">
-        <strong>TikTok:**
-        <a href="https://www.tiktok.com/search?q=Lora99" target="_blank" rel="noopener noreferrer">Lora99 on TikTok</a>
+        <strong>TikTok:</strong>
+        <a href="https://www.tiktok.com/@premiumquality60?_r=1&_t=ZS-98hTaW8iIbg" target="_blank" rel="noopener noreferrer">Lora99 on TikTok</a>
     </div>
 
     <div class="quick-buttons">
         <a href="tel:+94789576656">📞 Call</a>
-        <a href="https://wa.me/94786477227" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+        <a href="https://wa.me/94786477227" target="_blank" rel="noopener noreferrer">💬 Direct Chat</a>
+        <a href="https://chat.whatsapp.com/FsQQHREP9tdDtXYUSfQdkl?s=cl&p=i&ilr=2&amv=0" target="_blank" rel="noopener noreferrer" style="background: #25D366; color: white; border: none; grid-column: span 2;">👥 Join WhatsApp Group</a>
         <a href="mailto:tharushikashehanw@gmail.com">✉ Email</a>
         <a href="https://www.google.com/maps/search/?api=1&query=Kosnathota%2C%20Godakawela%2C%20Sri%20Lanka" target="_blank" rel="noopener noreferrer">📍 Location</a>
     </div>
@@ -919,8 +929,8 @@ footer p {
 
     <div class="social-links">
         <a href="https://www.facebook.com/share/1Bds9rnUnh/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <a href="https://www.tiktok.com/search?q=Lora99" target="_blank" rel="noopener noreferrer">TikTok</a>
-        <a href="https://wa.me/94786477227" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://www.tiktok.com/@premiumquality60?_r=1&_t=ZS-98hTaW8iIbg" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://chat.whatsapp.com/FsQQHREP9tdDtXYUSfQdkl?s=cl&p=i&ilr=2&amv=0" target="_blank" rel="noopener noreferrer">WhatsApp Group</a>
     </div>
 
     <p style="margin-top:20px;">© 2026 Lora99. All Rights Reserved.</p>
