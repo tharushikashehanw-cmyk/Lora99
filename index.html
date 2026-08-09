@@ -1,885 +1,897 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lora99 | Premium Women's Fashion</title>
 
 <style>
-/* GENERAL STYLES */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
 }
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 85px;
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:85px
 }
 
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #0d0d0d;
-    color: #e6e6e6;
-    line-height: 1.6;
+body{
+    font-family:'Segoe UI',Arial,sans-serif;
+    background:#0d0d0d;
+    color:#e6e6e6;
+    line-height:1.6
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+a{
+    text-decoration:none;
+    color:inherit
 }
 
-/* TOP ANNOUNCEMENT BAR */
-.announcement-bar {
-    background: #d4af37;
-    color: #000000;
-    text-align: center;
-    padding: 8px 10px;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+/* ANNOUNCEMENT */
+.announcement-bar{
+    background:#d4af37;
+    color:#000;
+    text-align:center;
+    padding:8px 10px;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:1px;
+    text-transform:uppercase
 }
 
-/* HEADER & NAVBAR */
-header {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background: rgba(18, 18, 18, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid #282828;
+/* HEADER */
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:rgba(18,18,18,.95);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid #282828
 }
 
-.navbar {
-    max-width: 1200px;
-    margin: auto;
-    min-height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    min-height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 20px
 }
 
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px
 }
 
-.logo-area img {
-    width: 58px;
-    height: 58px;
-    object-fit: contain;
-    border-radius: 50%;
-    border: 2px solid #d4af37;
+.logo-area img{
+    width:58px;
+    height:58px;
+    object-fit:contain;
+    border-radius:50%;
+    border:2px solid #d4af37
 }
 
-.logo-name {
-    font-family: Georgia, serif;
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: #ffffff;
+.logo-name{
+    font-family:Georgia,serif;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:2px;
+    color:#fff
 }
 
-.logo-subtitle {
-    display: block;
-    font-size: 10px;
-    letter-spacing: 2px;
-    color: #d4af37;
+.logo-subtitle{
+    display:block;
+    font-size:10px;
+    letter-spacing:2px;
+    color:#d4af37
 }
 
-nav {
-    display: flex;
-    gap: 22px;
+nav{
+    display:flex;
+    gap:22px
 }
 
-nav a {
-    font-weight: bold;
-    font-size: 14px;
-    color: #cccccc;
-    transition: color 0.3s;
+nav a{
+    font-weight:bold;
+    font-size:14px;
+    color:#ccc;
+    transition:.3s
 }
 
-nav a:hover {
-    color: #d4af37;
+nav a:hover{
+    color:#d4af37
 }
 
-/* CART ICON BUTTON */
-.cart-icon-btn {
-    position: relative;
-    background: #1a1a1a;
-    border: 1px solid #d4af37;
-    color: #ffffff;
-    font-size: 18px;
-    padding: 8px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.3s;
+.cart-icon-btn{
+    background:#1a1a1a;
+    border:1px solid #d4af37;
+    color:#fff;
+    font-size:18px;
+    padding:8px 15px;
+    border-radius:20px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:8px
 }
 
-.cart-icon-btn:hover {
-    background: #d4af37;
-    color: #000000;
+.cart-count{
+    background:#d4af37;
+    color:#000;
+    font-size:12px;
+    font-weight:bold;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center
 }
 
-.cart-count {
-    background: #d4af37;
-    color: #000000;
-    font-size: 12px;
-    font-weight: bold;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* HERO */
+.hero{
+    padding:70px 6%;
+    background:radial-gradient(
+        circle at center,
+        #1a1a1a 0%,
+        #080808 100%
+    );
+    border-bottom:1px solid #222
 }
 
-.cart-icon-btn:hover .cart-count {
-    background: #000000;
-    color: #ffffff;
+.hero-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center
 }
 
-/* MODERN HERO SECTION */
-.hero {
-    padding: 70px 6%;
-    background: radial-gradient(circle at center, #1a1a1a 0%, #080808 100%);
-    border-bottom: 1px solid #222;
+.hero-text-side{
+    text-align:left
 }
 
-.hero-container {
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
+.hero-badge{
+    margin-bottom:20px;
+    display:inline-block
 }
 
-.hero-text-side {
-    text-align: left;
+.hero-badge img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:50%;
+    box-shadow:0 8px 25px rgba(212,175,55,.25);
+    border:2px solid #d4af37
 }
 
-.hero-badge {
-    margin-bottom: 20px;
-    display: inline-block;
+.hero-text-side h1{
+    font-family:Georgia,serif;
+    font-size:clamp(40px,5vw,65px);
+    line-height:1.1;
+    margin-bottom:15px;
+    color:#fff
 }
 
-.hero-badge img {
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.25);
-    border: 2px solid #d4af37;
+.hero-text-side h2{
+    font-size:22px;
+    margin-bottom:20px;
+    color:#d4af37;
+    font-weight:400
 }
 
-.hero-text-side h1 {
-    font-family: Georgia, serif;
-    font-size: clamp(40px, 5vw, 65px);
-    line-height: 1.1;
-    margin-bottom: 15px;
-    color: #ffffff;
-    letter-spacing: 1px;
+.hero-text-side p{
+    color:#aaa;
+    font-size:16px;
+    margin-bottom:30px;
+    line-height:1.7
 }
 
-.hero-text-side h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: #d4af37;
-    font-weight: 400;
+.hero-button{
+    display:inline-block;
+    padding:15px 36px;
+    border-radius:30px;
+    background:linear-gradient(135deg,#d4af37,#aa820a);
+    color:#000;
+    font-weight:bold;
+    font-size:15px;
+    text-transform:uppercase;
+    letter-spacing:1px
 }
 
-.hero-text-side p {
-    color: #aaaaaa;
-    font-size: 16px;
-    margin-bottom: 30px;
-    line-height: 1.7;
+/* HERO PHOTO */
+.hero-image-box{
+    width:100%;
+    max-height:680px;
+    overflow:hidden;
+    border-radius:24px;
+    box-shadow:0 20px 50px rgba(0,0,0,.9);
+    border:2px solid #d4af37;
+    background:#000;
+    display:flex;
+    align-items:center;
+    justify-content:center
 }
 
-.hero-button {
-    display: inline-block;
-    padding: 15px 36px;
-    border-radius: 30px;
-    background: linear-gradient(135deg, #d4af37, #aa820a);
-    color: #000000;
-    font-weight: bold;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.hero-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
-}
-
-.hero-image-side {
-    width: 100%;
-}
-
-.hero-image-box {
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    border-radius: 24px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.9);
-    border: 2px solid #d4af37;
-    position: relative;
-}
-
-.hero-image-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    transition: transform 0.5s ease;
-}
-
-.hero-image-box:hover img {
-    transform: scale(1.03);
+.hero-image-box img{
+    display:block;
+    width:100%;
+    height:auto;
+    max-height:676px;
+    object-fit:contain;
+    object-position:center
 }
 
 /* GENERAL SECTIONS */
-section {
-    padding: 80px 6%;
+section{
+    padding:80px 6%
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 45px;
+.section-title{
+    text-align:center;
+    margin-bottom:45px
 }
 
-.section-title h2 {
-    font-family: Georgia, serif;
-    font-size: 38px;
-    margin-bottom: 10px;
-    color: #ffffff;
+.section-title h2{
+    font-family:Georgia,serif;
+    font-size:38px;
+    margin-bottom:10px;
+    color:#fff
 }
 
-.section-title p {
-    color: #888888;
+.section-title p{
+    color:#888
 }
 
-/* COLLECTION SECTION */
-.collection {
-    background: #121212;
+/* COLLECTION */
+.collection,
+.shipping{
+    background:#121212
 }
 
-.gallery {
-    max-width: 1150px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+.gallery{
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px
 }
 
-.product-card {
-    background: #181818;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 7px 22px rgba(0,0,0,0.6);
-    border: 1px solid #262626;
-    transition: transform 0.3s, border-color 0.3s;
+.product-card{
+    background:#181818;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 7px 22px rgba(0,0,0,.6);
+    border:1px solid #262626
 }
 
-.product-card:hover {
-    transform: translateY(-5px);
-    border-color: #d4af37;
+.product-img{
+    width:100%;
+    height:480px;
+    object-fit:cover;
+    display:block
 }
 
-.product-img {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-    display: block;
+.product-details{
+    padding:20px;
+    text-align:center
 }
 
-.product-details {
-    padding: 20px;
-    text-align: center;
+.product-title{
+    font-size:18px;
+    font-weight:bold;
+    color:#fff;
+    margin-bottom:5px
 }
 
-.product-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 5px;
+.product-price{
+    color:#d4af37;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px
 }
 
-.product-price {
-    color: #d4af37;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
+.size-selector{
+    display:flex;
+    justify-content:center;
+    gap:6px;
+    margin-bottom:15px;
+    flex-wrap:wrap
 }
 
-/* SIZE SELECTOR */
-.size-selector {
-    display: flex;
-    justify-content: center;
-    gap: 6px;
-    margin-bottom: 15px;
-    flex-wrap: wrap;
+.size-btn{
+    background:#222;
+    border:1px solid #444;
+    color:#fff;
+    padding:6px 10px;
+    border-radius:5px;
+    font-size:12px;
+    cursor:pointer
 }
 
-.size-btn {
-    background: #222222;
-    border: 1px solid #444444;
-    color: #ffffff;
-    padding: 6px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    cursor: pointer;
-    transition: all 0.2s;
+.size-btn.active,
+.size-btn:hover{
+    background:#d4af37;
+    color:#000;
+    border-color:#d4af37;
+    font-weight:bold
 }
 
-.size-btn.active, .size-btn:hover {
-    background: #d4af37;
-    color: #000000;
-    border-color: #d4af37;
-    font-weight: bold;
+.add-cart-btn{
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    background:transparent;
+    border:1px solid #d4af37;
+    color:#d4af37;
+    font-size:13px;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    cursor:pointer
 }
 
-.add-cart-btn {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    background: transparent;
-    border: 1px solid #d4af37;
-    color: #d4af37;
-    font-size: 13px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.3s;
+.add-cart-btn:hover{
+    background:#d4af37;
+    color:#000
 }
 
-.add-cart-btn:hover {
-    background: #d4af37;
-    color: #000000;
+/* CART */
+.cart-drawer{
+    position:fixed;
+    top:0;
+    right:-420px;
+    width:380px;
+    height:100%;
+    background:#161616;
+    box-shadow:-5px 0 25px rgba(0,0,0,.9);
+    z-index:1000;
+    transition:right .4s;
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+    border-left:1px solid #282828
 }
 
-/* CART DRAWER (SIDEBAR) */
-.cart-drawer {
-    position: fixed;
-    top: 0;
-    right: -420px;
-    width: 380px;
-    height: 100%;
-    background: #161616;
-    box-shadow: -5px 0 25px rgba(0,0,0,0.9);
-    z-index: 1000;
-    transition: right 0.4s ease;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border-left: 1px solid #282828;
+.cart-drawer.open{
+    right:0
 }
 
-.cart-drawer.open {
-    right: 0;
+.cart-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #282828;
+    padding-bottom:15px;
+    margin-bottom:20px
 }
 
-.cart-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #282828;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
+.cart-header h3{
+    font-family:Georgia,serif;
+    font-size:22px;
+    color:#fff
 }
 
-.cart-header h3 {
-    font-family: Georgia, serif;
-    font-size: 22px;
-    color: #ffffff;
+.close-cart{
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:28px;
+    cursor:pointer
 }
 
-.close-cart {
-    background: none;
-    border: none;
-    color: #ffffff;
-    font-size: 28px;
-    cursor: pointer;
+.cart-items{
+    flex:1;
+    overflow-y:auto
 }
 
-.cart-items {
-    flex: 1;
-    overflow-y: auto;
+.cart-item{
+    display:flex;
+    gap:15px;
+    margin-bottom:15px;
+    background:#0d0d0d;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #222
 }
 
-.cart-item {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 15px;
-    background: #0d0d0d;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #222222;
+.cart-item img{
+    width:65px;
+    height:80px;
+    object-fit:cover;
+    border-radius:5px
 }
 
-.cart-item img {
-    width: 65px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 5px;
+.cart-item-info{
+    flex:1
 }
 
-.cart-item-info {
-    flex: 1;
+.cart-item-info h4{
+    font-size:15px;
+    color:#fff
 }
 
-.cart-item-info h4 {
-    font-size: 15px;
-    color: #ffffff;
-    margin-bottom: 4px;
+.cart-item-info p{
+    font-size:13px;
+    color:#aaa
 }
 
-.cart-item-info p {
-    font-size: 13px;
-    color: #aaaaaa;
+.cart-item-info .price{
+    color:#d4af37;
+    font-weight:bold;
+    margin-top:4px
 }
 
-.cart-item-info .price {
-    color: #d4af37;
-    font-weight: bold;
-    margin-top: 4px;
+.remove-item{
+    color:#ff5555;
+    font-size:12px;
+    cursor:pointer;
+    margin-top:5px;
+    display:inline-block
 }
 
-.remove-item {
-    color: #ff5555;
-    font-size: 12px;
-    cursor: pointer;
-    margin-top: 5px;
-    display: inline-block;
+.cart-footer{
+    border-top:1px solid #282828;
+    padding-top:20px
 }
 
-.cart-footer {
-    border-top: 1px solid #282828;
-    padding-top: 20px;
+.cart-total{
+    display:flex;
+    justify-content:space-between;
+    font-size:18px;
+    font-weight:bold;
+    color:#fff;
+    margin-bottom:20px
 }
 
-.cart-total {
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 20px;
+.whatsapp-checkout-btn,
+.whatsapp-button{
+    width:100%;
+    padding:14px;
+    background:#25D366;
+    color:#fff;
+    border:none;
+    font-size:15px;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    cursor:pointer;
+    border-radius:8px
 }
 
-.whatsapp-checkout-btn {
-    width: 100%;
-    padding: 14px;
-    background: #25D366;
-    color: white;
-    border: none;
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background 0.3s;
+.whatsapp-checkout-btn:hover,
+.whatsapp-button:hover{
+    background:#1ebe5d
 }
 
-.whatsapp-checkout-btn:hover {
-    background: #1ebe5d;
+.cart-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.7);
+    z-index:999;
+    display:none
 }
 
-.cart-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
-    z-index: 999;
-    display: none;
-}
-
-.cart-overlay.show {
-    display: block;
+.cart-overlay.show{
+    display:block
 }
 
 /* ABOUT */
-.about-container {
-    max-width: 1150px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 45px;
+.about-container{
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px
 }
 
-.about-container h3 {
-    font-family: Georgia, serif;
-    font-size: 28px;
-    margin-bottom: 12px;
-    color: #d4af37;
+.about-container h3,
+.shipping-box h3{
+    font-family:Georgia,serif;
+    color:#d4af37
 }
 
-.about-container p {
-    color: #bbbbbb;
+.about-container h3{
+    font-size:28px;
+    margin-bottom:12px
 }
 
-.why-box {
-    background: #161616;
-    padding: 30px;
-    border-radius: 18px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-    border: 1px solid #252525;
+.about-container p{
+    color:#bbb
 }
 
-.why-box h3 {
-    margin-bottom: 18px;
+.why-box,
+.feature,
+.shipping-box,
+.contact-info,
+.contact-form{
+    background:#161616;
+    border:1px solid #252525;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.5)
 }
 
-.why-box ul {
-    padding-left: 22px;
+.why-box{
+    padding:30px
 }
 
-.why-box li {
-    margin-bottom: 13px;
-    color: #cccccc;
+.why-box ul{
+    padding-left:22px
+}
+
+.why-box li{
+    margin-bottom:13px;
+    color:#ccc
 }
 
 /* FEATURES */
-.features {
-    max-width: 1150px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
+.features{
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px
 }
 
-.feature {
-    background: #161616;
-    text-align: center;
-    padding: 28px 20px;
-    border-radius: 15px;
-    box-shadow: 0 7px 22px rgba(0,0,0,0.4);
-    border: 1px solid #252525;
+.feature{
+    text-align:center;
+    padding:28px 20px
 }
 
-.feature-icon {
-    font-size: 35px;
-    margin-bottom: 10px;
+.feature-icon{
+    font-size:35px;
+    margin-bottom:10px
 }
 
-.feature h3 {
-    margin-bottom: 7px;
-    color: #ffffff;
+.feature h3{
+    margin-bottom:7px;
+    color:#fff
 }
 
-.feature p {
-    font-size: 14px;
-    color: #999999;
+.feature p{
+    font-size:14px;
+    color:#999
 }
 
 /* SHIPPING */
-.shipping {
-    background: #121212;
+.shipping-container{
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px
 }
 
-.shipping-container {
-    max-width: 1150px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
+.shipping-box{
+    padding:30px;
+    border-radius:16px
 }
 
-.shipping-box {
-    background: #181818;
-    padding: 30px;
-    border-radius: 16px;
-    border: 1px solid #262626;
+.shipping-box h3{
+    font-size:26px;
+    margin-bottom:15px
 }
 
-.shipping-box h3 {
-    font-family: Georgia, serif;
-    font-size: 26px;
-    margin-bottom: 15px;
-    color: #d4af37;
+.shipping-box ul{
+    padding-left:22px
 }
 
-.shipping-box ul {
-    padding-left: 22px;
-}
-
-.shipping-box li {
-    margin-bottom: 12px;
-    color: #cccccc;
+.shipping-box li{
+    margin-bottom:12px;
+    color:#ccc
 }
 
 /* CONTACT */
-.contact-container {
-    max-width: 1150px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 30px;
+.contact-container{
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:30px
 }
 
 .contact-info,
-.contact-form {
-    background: #161616;
-    padding: 30px;
-    border-radius: 18px;
-    box-shadow: 0 7px 25px rgba(0,0,0,0.5);
-    border: 1px solid #252525;
+.contact-form{
+    padding:30px
 }
 
 .contact-info h3,
-.contact-form h3 {
-    font-family: Georgia, serif;
-    font-size: 27px;
-    margin-bottom: 22px;
-    color: #ffffff;
+.contact-form h3{
+    font-family:Georgia,serif;
+    font-size:27px;
+    margin-bottom:22px;
+    color:#fff
 }
 
-.contact-item {
-    margin-bottom: 18px;
-    color: #cccccc;
+.contact-item{
+    margin-bottom:18px;
+    color:#ccc
 }
 
-.contact-item strong {
-    display: block;
-    margin-bottom: 3px;
-    color: #d4af37;
+.contact-item strong{
+    display:block;
+    margin-bottom:3px;
+    color:#d4af37
 }
 
-.contact-item a:hover {
-    color: #d4af37;
+.contact-item a:hover{
+    color:#d4af37
 }
 
-.quick-buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-top: 25px;
+.quick-buttons{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-top:25px
 }
 
-.quick-buttons a {
-    text-align: center;
-    padding: 12px;
-    border-radius: 9px;
-    border: 1px solid #333333;
-    background: #222222;
-    color: #ffffff;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.quick-buttons a:hover {
-    background: #2d2d2d;
-    border-color: #d4af37;
+.quick-buttons a{
+    text-align:center;
+    padding:12px;
+    border-radius:9px;
+    border:1px solid #333;
+    background:#222;
+    color:#fff;
+    font-weight:bold
 }
 
 .contact-form input,
 .contact-form select,
-.contact-form textarea {
-    width: 100%;
-    padding: 14px;
-    margin-bottom: 14px;
-    border: 1px solid #333333;
-    border-radius: 9px;
-    font-size: 15px;
-    font-family: Arial, sans-serif;
-    outline: none;
-    background: #0d0d0d;
-    color: #ffffff;
+.contact-form textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:14px;
+    border:1px solid #333;
+    border-radius:9px;
+    font-size:15px;
+    background:#0d0d0d;
+    color:#fff;
+    outline:none
 }
 
-.contact-form select option {
-    background: #161616;
-    color: #ffffff;
+.contact-form select option{
+    background:#161616;
+    color:#fff
 }
 
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus {
-    border-color: #25D366;
+.contact-form textarea{
+    resize:vertical
 }
 
-.contact-form textarea {
-    resize: vertical;
-}
-
-.whatsapp-button {
-    width: 100%;
-    padding: 14px;
-    border: none;
-    border-radius: 9px;
-    background: #25D366;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.whatsapp-button:hover {
-    background: #1ebe5d;
-}
-
-.form-note {
-    font-size: 12px;
-    color: #777777;
-    margin-top: 10px;
+.form-note{
+    font-size:12px;
+    color:#777;
+    margin-top:10px
 }
 
 /* FOOTER */
-footer {
-    background: #050505;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    border-top: 1px solid #1a1a1a;
+footer{
+    background:#050505;
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+    border-top:1px solid #1a1a1a
 }
 
-.footer-logo {
-    width: 65px;
-    height: 65px;
-    object-fit: contain;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    border: 1px solid #d4af37;
+.footer-logo{
+    width:65px;
+    height:65px;
+    object-fit:contain;
+    border-radius:50%;
+    margin-bottom:10px;
+    border:1px solid #d4af37
 }
 
-footer h2 {
-    font-family: Georgia, serif;
-    margin-bottom: 5px;
-    color: #ffffff;
+footer h2{
+    font-family:Georgia,serif;
+    margin-bottom:5px
 }
 
-footer p {
-    color: #888888;
-    font-size: 14px;
-    margin: 5px 0;
+footer p{
+    color:#888;
+    font-size:14px;
+    margin:5px 0
 }
 
-.social-links {
-    margin-top: 18px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+.social-links{
+    margin-top:18px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap
 }
 
-.social-links a {
-    border: 1px solid #333333;
-    padding: 8px 15px;
-    border-radius: 20px;
-    background: #111111;
-    transition: all 0.3s;
+.social-links a{
+    border:1px solid #333;
+    padding:8px 15px;
+    border-radius:20px;
+    background:#111
 }
 
-.social-links a:hover {
-    background: #d4af37;
-    color: #000000;
-    border-color: #d4af37;
+/* RESPONSIVE */
+@media(max-width:992px){
+
+    .hero-container{
+        grid-template-columns:1fr;
+        text-align:center
+    }
+
+    .hero-text-side{
+        text-align:center
+    }
+
+    .hero-image-box{
+        height:auto;
+        max-height:none
+    }
 }
 
-/* MOBILE RESPONSIVE */
-@media(max-width: 992px) {
-    .hero-container { grid-template-columns: 1fr; text-align: center; }
-    .hero-text-side { text-align: center; }
-    .hero-image-box { height: 480px; }
+@media(max-width:850px){
+
+    nav{
+        gap:12px
+    }
+
+    nav a{
+        font-size:12px
+    }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr)
+    }
+
+    .about-container,
+    .shipping-container,
+    .contact-container{
+        grid-template-columns:1fr
+    }
+
+    .features{
+        grid-template-columns:repeat(2,1fr)
+    }
 }
 
-@media(max-width: 850px) {
-    nav { gap: 12px; }
-    nav a { font-size: 12px; }
-    .gallery { grid-template-columns: repeat(2, 1fr); }
-    .about-container, .shipping-container, .contact-container { grid-template-columns: 1fr; }
-    .features { grid-template-columns: repeat(2, 1fr); }
-}
+@media(max-width:550px){
 
-@media(max-width: 550px) {
-    .navbar { flex-direction: column; padding: 12px; gap: 10px; }
-    nav { flex-wrap: wrap; justify-content: center; }
-    .hero { padding: 40px 5%; }
-    .hero-image-box { height: 380px; }
-    section { padding: 60px 5%; }
-    .gallery { grid-template-columns: 1fr; }
-    .product-img { height: 480px; }
-    .features { grid-template-columns: 1fr; }
-    .quick-buttons { grid-template-columns: 1fr; }
-    .cart-drawer { width: 100%; right: -100%; }
-}
+    .navbar{
+        flex-direction:column;
+        padding:12px;
+        gap:10px
+    }
 
+    nav{
+        flex-wrap:wrap;
+        justify-content:center
+    }
+
+    .hero{
+        padding:40px 5%
+    }
+
+    .hero-image-box{
+        height:auto;
+        max-height:none
+    }
+
+    section{
+        padding:60px 5%
+    }
+
+    .gallery{
+        grid-template-columns:1fr
+    }
+
+    .product-img{
+        height:480px
+    }
+
+    .features{
+        grid-template-columns:1fr
+    }
+
+    .quick-buttons{
+        grid-template-columns:1fr
+    }
+
+    .cart-drawer{
+        width:100%;
+        right:-100%
+    }
+}
 </style>
 </head>
 
 <body>
 
-<!-- TOP ANNOUNCEMENT BAR -->
+<!-- ANNOUNCEMENT -->
 <div class="announcement-bar">
-    🚚 Islandwide Delivery Available | Cash on Delivery & Card Payments 🇱🇰
+🚚 Islandwide Delivery Available | Cash on Delivery & Card Payments 🇱🇰
 </div>
 
 <!-- HEADER -->
 <header>
+
 <div class="navbar">
-    <a href="#home" class="logo-area">
-        <img src="logo.jpg" alt="Lora99 Logo">
-        <div>
-            <div class="logo-name">Lora99</div>
-            <span class="logo-subtitle">WOMEN'S FASHION</span>
-        </div>
-    </a>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#collection">Collection</a>
-        <a href="#about">About</a>
-        <a href="#shipping">Shipping</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<a href="#home" class="logo-area">
 
-    <button class="cart-icon-btn" onclick="toggleCart()">
-        🛒 Cart <span class="cart-count" id="cartCount">0</span>
-    </button>
+<img src="logo.jpg" alt="Lora99 Logo">
+
+<div>
+<div class="logo-name">Lora99</div>
+<span class="logo-subtitle">WOMEN'S FASHION</span>
 </div>
+
+</a>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#collection">Collection</a>
+<a href="#about">About</a>
+<a href="#shipping">Shipping</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<button class="cart-icon-btn" onclick="toggleCart()">
+🛒 Cart
+<span class="cart-count" id="cartCount">0</span>
+</button>
+
+</div>
+
 </header>
 
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section class="hero" id="home">
+
 <div class="hero-container">
-    <div class="hero-text-side">
-        <div class="hero-badge">
-            <img src="logo.jpg" alt="Lora99 Badge Logo">
-        </div>
 
-        <h1>Lora99</h1>
-        <h2>Redefining Everyday Elegance for Women.</h2>
-        <p>
-            At Lora99, we believe that fashion is more than just clothing—it’s an expression of your unique personality, style, and confidence.
-            Discover modern women's fashion combining style, comfort and affordable luxury.
-        </p>
+<div class="hero-text-side">
 
-        <a href="#collection" class="hero-button">Explore Our Collection</a>
-    </div>
-
-    <div class="hero-image-side">
-        <div class="hero-image-box">
-            <!-- Updated Path: WA0007.jpg -->
-            <img src="WA0007.jpg" alt="Lora99 Women's Fashion Hero Showcase">
-        </div>
-    </div>
+<div class="hero-badge">
+<img src="logo.jpg" alt="Lora99 Badge Logo">
 </div>
+
+<h1>Lora99</h1>
+
+<h2>
+Redefining Everyday Elegance for Women.
+</h2>
+
+<p>
+At Lora99, we believe that fashion is more than just clothing—it’s an expression of your unique personality, style, and confidence. Discover modern women's fashion combining style, comfort and affordable luxury.
+</p>
+
+<a href="#collection" class="hero-button">
+Explore Our Collection
+</a>
+
+</div>
+
+
+<!-- HERO PHOTO = WA0007.jpg -->
+<div class="hero-image-side">
+
+<div class="hero-image-box">
+
+<img src="WA0007.jpg"
+alt="Lora99 Women's Fashion Hero Showcase">
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 
@@ -887,484 +899,1052 @@ footer p {
 <section class="collection" id="collection">
 
 <div class="section-title">
-    <h2>Our Collection</h2>
-    <p>Select your size & add items to cart to order directly via WhatsApp</p>
+
+<h2>Our Collection</h2>
+
+<p>
+Select your size & add items to cart to order directly via WhatsApp
+</p>
+
 </div>
+
 
 <div class="gallery">
 
-    <!-- Collection 01 -->
-    <div class="product-card">
-        <img src="WA0001.jpg" class="product-img" alt="Lora99 Fashion Dress 1">
-        <div class="product-details">
-            <div class="product-title">Collection 01</div>
-            <div class="product-price">Rs. 3,300</div>
-            <div class="size-selector" id="size-WA0001">
-                <button class="size-btn active" onclick="selectSize(this)">S</button>
-                <button class="size-btn" onclick="selectSize(this)">M</button>
-                <button class="size-btn" onclick="selectSize(this)">L</button>
-                <button class="size-btn" onclick="selectSize(this)">XL</button>
-                <button class="size-btn" onclick="selectSize(this)">XXL</button>
-            </div>
-            <button class="add-cart-btn" onclick="addToCart('Collection 01', 3300, 'WA0001.jpg', 'size-WA0001')">Add To Cart</button>
-        </div>
-    </div>
 
-    <!-- Collection 02 -->
-    <div class="product-card">
-        <img src="WA0002.jpg" class="product-img" alt="Lora99 Fashion Dress 2">
-        <div class="product-details">
-            <div class="product-title">Collection 02</div>
-            <div class="product-price">Rs. 2,800</div>
-            <div class="size-selector" id="size-WA0002">
-                <button class="size-btn active" onclick="selectSize(this)">S</button>
-                <button class="size-btn" onclick="selectSize(this)">M</button>
-                <button class="size-btn" onclick="selectSize(this)">L</button>
-                <button class="size-btn" onclick="selectSize(this)">XL</button>
-                <button class="size-btn" onclick="selectSize(this)">XXL</button>
-            </div>
-            <button class="add-cart-btn" onclick="addToCart('Collection 02', 2800, 'WA0002.jpg', 'size-WA0002')">Add To Cart</button>
-        </div>
-    </div>
+<!-- PRODUCT 01 -->
+<div class="product-card">
 
-    <!-- Collection 03 -->
-    <div class="product-card">
-        <img src="WA0003.jpg" class="product-img" alt="Lora99 Fashion Dress 3">
-        <div class="product-details">
-            <div class="product-title">Collection 03</div>
-            <div class="product-price">Rs. 2,800</div>
-            <div class="size-selector" id="size-WA0003">
-                <button class="size-btn active" onclick="selectSize(this)">S</button>
-                <button class="size-btn" onclick="selectSize(this)">M</button>
-                <button class="size-btn" onclick="selectSize(this)">L</button>
-                <button class="size-btn" onclick="selectSize(this)">XL</button>
-                <button class="size-btn" onclick="selectSize(this)">XXL</button>
-            </div>
-            <button class="add-cart-btn" onclick="addToCart('Collection 03', 2800, 'WA0003.jpg', 'size-WA0003')">Add To Cart</button>
-        </div>
-    </div>
+<img src="WA0001.jpg"
+class="product-img"
+alt="Lora99 Fashion Dress 1">
 
-    <!-- Collection 04 -->
-    <div class="product-card">
-        <img src="WA0004.jpg" class="product-img" alt="Lora99 Fashion Dress 4">
-        <div class="product-details">
-            <div class="product-title">Collection 04</div>
-            <div class="product-price">Rs. 3,700</div>
-            <div class="size-selector" id="size-WA0004">
-                <button class="size-btn active" onclick="selectSize(this)">S</button>
-                <button class="size-btn" onclick="selectSize(this)">M</button>
-                <button class="size-btn" onclick="selectSize(this)">L</button>
-                <button class="size-btn" onclick="selectSize(this)">XL</button>
-                <button class="size-btn" onclick="selectSize(this)">XXL</button>
-            </div>
-            <button class="add-cart-btn" onclick="addToCart('Collection 04', 3700, 'WA0004.jpg', 'size-WA0004')">Add To Cart</button>
-        </div>
-    </div>
+<div class="product-details">
 
-    <!-- Collection 05 -->
-    <div class="product-card">
-        <img src="WA0005.jpg" class="product-img" alt="Lora99 Fashion Dress 5">
-        <div class="product-details">
-            <div class="product-title">Collection 05</div>
-            <div class="product-price">Rs. 2,200</div>
-            <div class="size-selector" id="size-WA0005">
-                <button class="size-btn active" onclick="selectSize(this)">S</button>
-                <button class="size-btn" onclick="selectSize(this)">M</button>
-                <button class="size-btn" onclick="selectSize(this)">L</button>
-                <button class="size-btn" onclick="selectSize(this)">XL</button>
-                <button class="size-btn" onclick="selectSize(this)">XXL</button>
-            </div>
-            <button class="add-cart-btn" onclick="addToCart('Collection 05', 2200, 'WA0005.jpg', 'size-WA0005')">Add To Cart</button>
-        </div>
-    </div>
+<div class="product-title">
+Collection 01
+</div>
 
-    <!-- Collection 06 -->
-    <div class="product-card">
-        <img src="WA0006.jpg" class="product-img" alt="Lora99 Fashion Dress 6">
-        <div class="product-details">
-            <div class="product-title">Collection 06</div>
-            <div class="product-price">Rs. 2,200</div>
-            <div class="size-selector" id="size-WA0006">
-                <button class="size-btn active" onclick="selectSize(this)">S</button>
-                <button class="size-btn" onclick="selectSize(this)">M</button>
-                <button class="size-btn" onclick="selectSize(this)">L</button>
-                <button class="size-btn" onclick="selectSize(this)">XL</button>
-                <button class="size-btn" onclick="selectSize(this)">XXL</button>
-            </div>
-            <button class="add-cart-btn" onclick="addToCart('Collection 06', 2200, 'WA0006.jpg', 'size-WA0006')">Add To Cart</button>
-        </div>
-    </div>
+<div class="product-price">
+Rs. 3,300
+</div>
+
+<div class="size-selector" id="size-WA0001">
+
+<button class="size-btn active"
+onclick="selectSize(this)">S</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">M</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">L</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">XL</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">XXL</button>
 
 </div>
 
-<!-- SINHALA DESCRIPTION CARD -->
-<div style="max-width: 800px; margin: 40px auto 0 auto; background: #161616; padding: 30px 25px; border-radius: 18px; text-align: center; box-shadow: 0 8px 25px rgba(0,0,0,0.6); border: 1px solid #d4af37;">
-    <h3 style="font-family: Georgia, serif; font-size: 24px; color: #d4af37; margin-bottom: 12px; letter-spacing: 1px;">
-        🤍 LORA99 CLOTHING 🤍
-    </h3>
+<button class="add-cart-btn"
+onclick="addToCart('Collection 01',3300,'WA0001.jpg','size-WA0001')">
 
-    <p style="font-size: 16px; color: #ffffff; font-weight: bold; margin-bottom: 20px; line-height: 1.6;">
-        ඔබේ සුන්දරත්වය තවත් ඉස්මතු කරන, ඔබේ පෞරුෂයට ගැලපෙන අලංකාර විලාසිතා… ✨
-    </p>
+Add To Cart
 
-    <ul style="list-style: none; padding: 0; margin: 0 auto 20px auto; display: inline-block; text-align: left; line-height: 2;">
-        <li style="font-size: 15px; color: #cccccc;">👗 ආකර්ෂණීය හා නවීන කාන්තා ඇඳුම්</li>
-        <li style="font-size: 15px; color: #cccccc;">💎 උසස් තත්ත්වය • අලංකාර නිමාව</li>
-        <li style="font-size: 15px; color: #cccccc;">🌸 සෑම අවස්ථාවකටම ගැලපෙන සුන්දර විලාසිතා</li>
-        <li style="font-size: 15px; color: #cccccc;">🤍 ඔබ වෙනුවෙන්ම තෝරාගත් අලංකාර මෝස්තර</li>
-    </ul>
+</button>
 
-    <div style="border-top: 1px dashed #333333; padding-top: 15px; margin-top: 10px;">
-        <p style="font-size: 15px; color: #aaaaaa; margin-bottom: 6px;">
-            📩 ඔබ කැමති මෝස්තරය ඇණවුම් කිරීමට අපට පණිවිඩයක් එවන්න
-        </p>
-        <p style="font-size: 15px; color: #ffffff; font-weight: bold; margin-bottom: 15px;">
-            🚚 දිවයින පුරා බෙදාහැරීම් 🇱🇰
-        </p>
-        <p style="font-family: Georgia, serif; font-style: italic; color: #d4af37; font-size: 15px; margin: 0;">
-            ✨ ඔබ අඳින ඇඳුමට වඩා, ඔබේ විලාසිතාවයි අපේ වටිනාකම. ✨
-        </p>
-    </div>
+</div>
+</div>
+
+
+<!-- PRODUCT 02 -->
+<div class="product-card">
+
+<img src="WA0002.jpg"
+class="product-img"
+alt="Lora99 Fashion Dress 2">
+
+<div class="product-details">
+
+<div class="product-title">
+Collection 02
+</div>
+
+<div class="product-price">
+Rs. 2,800
+</div>
+
+<div class="size-selector" id="size-WA0002">
+
+<button class="size-btn active"
+onclick="selectSize(this)">S</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">M</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">L</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">XL</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">XXL</button>
+
+</div>
+
+<button class="add-cart-btn"
+onclick="addToCart('Collection 02',2800,'WA0002.jpg','size-WA0002')">
+
+Add To Cart
+
+</button>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 03 -->
+<div class="product-card">
+
+<img src="WA0003.jpg"
+class="product-img"
+alt="Lora99 Fashion Dress 3">
+
+<div class="product-details">
+
+<div class="product-title">
+Collection 03
+</div>
+
+<div class="product-price">
+Rs. 2,800
+</div>
+
+<div class="size-selector" id="size-WA0003">
+
+<button class="size-btn active"
+onclick="selectSize(this)">S</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">M</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">L</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">XL</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">XXL</button>
+
+</div>
+
+<button class="add-cart-btn"
+onclick="addToCart('Collection 03',2800,'WA0003.jpg','size-WA0003')">
+
+Add To Cart
+
+</button>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 04 -->
+<div class="product-card">
+
+<img src="WA0004.jpg"
+class="product-img"
+alt="Lora99 Fashion Dress 4">
+
+<div class="product-details">
+
+<div class="product-title">
+Collection 04
+</div>
+
+<div class="product-price">
+Rs. 3,700
+</div>
+
+<div class="size-selector" id="size-WA0004">
+
+<button class="size-btn active"
+onclick="selectSize(this)">S</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">M</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">L</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">XL</button>
+
+<button class="size-btn"
+onclick="selectSize(this)">XXL</button>
+
+</div>
+
+<button class="add-cart-btn"
+onclick="addToCart('Collection 04',3700,'WA0004.jpg','size-WA0004')">
+
+Add To Cart
+
+</button>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- SINHALA BRAND MESSAGE -->
+<div style="
+max-width:800px;
+margin:40px auto 0;
+background:#161616;
+padding:30px 25px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 8px 25px rgba(0,0,0,.6);
+border:1px solid #d4af37">
+
+<h3 style="
+font-family:Georgia,serif;
+font-size:24px;
+color:#d4af37;
+margin-bottom:12px">
+
+🤍 LORA99 CLOTHING 🤍
+
+</h3>
+
+<p style="
+font-size:16px;
+color:#fff;
+font-weight:bold;
+margin-bottom:20px">
+
+ඔබේ සුන්දරත්වය තවත් ඉස්මතු කරන,
+ඔබේ පෞරුෂයට ගැලපෙන අලංකාර විලාසිතා… ✨
+
+</p>
+
+<ul style="
+list-style:none;
+padding:0;
+margin:0 auto 20px;
+display:inline-block;
+text-align:left;
+line-height:2">
+
+<li>👗 ආකර්ෂණීය හා නවීන කාන්තා ඇඳුම්</li>
+
+<li>💎 උසස් තත්ත්වය • අලංකාර නිමාව</li>
+
+<li>🌸 සෑම අවස්ථාවකටම ගැලපෙන සුන්දර විලාසිතා</li>
+
+<li>🤍 ඔබ වෙනුවෙන්ම තෝරාගත් අලංකාර මෝස්තර</li>
+
+</ul>
+
+<div style="
+border-top:1px dashed #333;
+padding-top:15px">
+
+<p>
+📩 ඔබ කැමති මෝස්තරය ඇණවුම් කිරීමට අපට පණිවිඩයක් එවන්න
+</p>
+
+<p style="color:#fff;font-weight:bold">
+🚚 දිවයින පුරා බෙදාහැරීම් 🇱🇰
+</p>
+
+<p style="
+font-family:Georgia,serif;
+font-style:italic;
+color:#d4af37">
+
+✨ ඔබ අඳින ඇඳුමට වඩා,
+ඔබේ විලාසිතාවයි අපේ වටිනාකම. ✨
+
+</p>
+
+</div>
+
 </div>
 
 </section>
 
 
-<!-- CART DRAWER -->
-<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<!-- CART OVERLAY -->
+<div class="cart-overlay"
+id="cartOverlay"
+onclick="toggleCart()">
+</div>
+
+
+<!-- CART -->
 <div class="cart-drawer" id="cartDrawer">
-    <div class="cart-header">
-        <h3>Shopping Bag</h3>
-        <button class="close-cart" onclick="toggleCart()">&times;</button>
-    </div>
-    <div class="cart-items" id="cartItems">
-        <!-- Dynamic Cart Items -->
-    </div>
-    <div class="cart-footer">
-        <div class="cart-total">
-            <span>Total:</span>
-            <span id="cartTotal">Rs. 0</span>
-        </div>
-        <button class="whatsapp-checkout-btn" onclick="checkoutWhatsApp()">💬 Order via WhatsApp</button>
-    </div>
+
+<div class="cart-header">
+
+<h3>Shopping Bag</h3>
+
+<button class="close-cart"
+onclick="toggleCart()">
+&times;
+</button>
+
+</div>
+
+<div class="cart-items"
+id="cartItems">
+</div>
+
+<div class="cart-footer">
+
+<div class="cart-total">
+
+<span>Total:</span>
+
+<span id="cartTotal">
+Rs. 0
+</span>
+
+</div>
+
+<button class="whatsapp-checkout-btn"
+onclick="checkoutWhatsApp()">
+
+💬 Order via WhatsApp
+
+</button>
+
+</div>
+
 </div>
 
 
 <!-- ABOUT -->
 <section id="about">
+
 <div class="section-title">
-    <h2>About Lora99</h2>
-    <p>Fashion designed for modern women.</p>
+
+<h2>About Lora99</h2>
+
+<p>
+Fashion designed for modern women.
+</p>
+
 </div>
+
 
 <div class="about-container">
+
 <div>
-    <h3>Welcome to Lora99</h3>
-    <p>
-        At Lora99, we believe that fashion is more than just clothing—it’s an expression of your unique personality, style, and confidence.
-        Designed specifically for modern women, our collections bring together the latest fashion trends, exceptional comfort, and affordable luxury.
-    </p>
-    <br>
-    <h3>Our Story</h3>
-    <p>
-        Founded with a passion for empowering women through style, Lora99 was created to bring high-quality, trendy fashion directly to your wardrobe.
-        Whether you are looking for chic casual outfits, elegant workwear, or striking pieces for a special occasion, we carefully curate every item to ensure you look and feel your absolute best.
-    </p>
-    <br>
-    <p>
-        Step into the world of contemporary women's fashion and discover your next favorite outfit.
-    </p>
+
+<h3>Welcome to Lora99</h3>
+
+<p>
+At Lora99, we believe that fashion is more than just clothing—it’s an expression of your unique personality, style, and confidence. Designed specifically for modern women, our collections bring together the latest fashion trends, exceptional comfort, and affordable luxury.
+</p>
+
+<br>
+
+<h3>Our Story</h3>
+
+<p>
+Founded with a passion for empowering women through style, Lora99 was created to bring high-quality, trendy fashion directly to your wardrobe. Whether you are looking for chic casual outfits, elegant workwear, or striking pieces for a special occasion, we carefully curate every item to ensure you look and feel your absolute best.
+</p>
+
+<br>
+
+<p>
+Step into the world of contemporary women's fashion and discover your next favorite outfit.
+</p>
+
 </div>
 
+
 <div class="why-box">
-    <h3>Why Choose Lora99?</h3>
-    <ul>
-        <li>
-            <strong style="color: #ffffff;">Trendy & Timeless Designs:</strong>
-            Carefully curated fashion items that match international trends while staying versatile.
-        </li>
-        <li>
-            <strong style="color: #ffffff;">Premium Quality & Comfort:</strong>
-            High-grade fabrics crafted to deliver long-lasting durability and all-day comfort.
-        </li>
-        <li>
-            <strong style="color: #ffffff;">Affordable Luxury:</strong>
-            Premium styles designed to give you an upscale look without the high price tag.
-        </li>
-        <li>
-            <strong style="color: #ffffff;">Seamless Experience:</strong>
-            Fast, reliable delivery and dedicated customer support to ensure your shopping experience is flawless.
-        </li>
-    </ul>
+
+<h3>Why Choose Lora99?</h3>
+
+<ul>
+
+<li>
+<strong>Trendy & Timeless Designs:</strong>
+Carefully curated fashion items that match international trends while staying versatile.
+</li>
+
+<li>
+<strong>Premium Quality & Comfort:</strong>
+High-grade fabrics crafted to deliver long-lasting durability and all-day comfort.
+</li>
+
+<li>
+<strong>Affordable Luxury:</strong>
+Premium styles designed to give you an upscale look without the high price tag.
+</li>
+
+<li>
+<strong>Seamless Experience:</strong>
+Fast, reliable delivery and dedicated customer support to ensure your shopping experience is flawless.
+</li>
+
+</ul>
+
 </div>
+
 </div>
+
 </section>
 
 
-<!-- FEATURES -->
+<!-- WHY SHOP -->
 <section>
+
 <div class="section-title">
-    <h2>Why Shop With Us?</h2>
+
+<h2>Why Shop With Us?</h2>
+
 </div>
 
+
 <div class="features">
+
 <div class="feature">
-    <div class="feature-icon">✨</div>
-    <h3>Trendy Styles</h3>
-    <p>Modern pieces selected for today's fashion-forward woman.</p>
+
+<div class="feature-icon">✨</div>
+
+<h3>Trendy Styles</h3>
+
+<p>
+Modern pieces selected for today's fashion-forward woman.
+</p>
+
 </div>
+
+
 <div class="feature">
-    <div class="feature-icon">💎</div>
-    <h3>Premium Quality</h3>
-    <p>Comfortable fabrics and carefully selected designs.</p>
+
+<div class="feature-icon">💎</div>
+
+<h3>Premium Quality</h3>
+
+<p>
+Comfortable fabrics and carefully selected designs.
+</p>
+
 </div>
+
+
 <div class="feature">
-    <div class="feature-icon">💰</div>
-    <h3>Affordable Luxury</h3>
-    <p>Elegant looks without an unnecessarily high price.</p>
+
+<div class="feature-icon">💰</div>
+
+<h3>Affordable Luxury</h3>
+
+<p>
+Elegant looks without an unnecessarily high price.
+</p>
+
 </div>
+
+
 <div class="feature">
-    <div class="feature-icon">🤝</div>
-    <h3>Customer Care</h3>
-    <p>Friendly support before and after your purchase.</p>
+
+<div class="feature-icon">🤝</div>
+
+<h3>Customer Care</h3>
+
+<p>
+Friendly support before and after your purchase.
+</p>
+
 </div>
+
 </div>
+
 </section>
 
 
 <!-- SHIPPING -->
 <section class="shipping" id="shipping">
+
 <div class="section-title">
-    <h2>Shipping & Delivery</h2>
-    <p>Simple, convenient and reliable delivery across Sri Lanka.</p>
+
+<h2>Shipping & Delivery</h2>
+
+<p>
+Simple, convenient and reliable delivery across Sri Lanka.
+</p>
+
 </div>
+
 
 <div class="shipping-container">
-<div class="shipping-box">
-    <h3>🚚 Shipping & Delivery</h3>
-    <ul>
-        <li><strong style="color: #ffffff;">Islandwide Delivery:</strong> 2 - 4 Working Days.</li>
-        <li><strong style="color: #ffffff;">Easy Exchanges:</strong> 7-day hassle-free exchange policy for sizing issues.</li>
-        <li>Orders are prepared and dispatched with care.</li>
-        <li>Contact us through WhatsApp for order and delivery questions.</li>
-    </ul>
-</div>
 
 <div class="shipping-box">
-    <h3>💳 Payment Methods</h3>
-    <ul>
-        <li>Cash on Delivery (COD)</li>
-        <li>Card Payments</li>
-        <li>Contact us for available payment options and order details.</li>
-    </ul>
+
+<h3>🚚 Shipping & Delivery</h3>
+
+<ul>
+
+<li>
+<strong>Islandwide Delivery:</strong>
+2 - 4 Working Days.
+</li>
+
+<li>
+<strong>Easy Exchanges:</strong>
+7-day hassle-free exchange policy for sizing issues.
+</li>
+
+<li>
+Orders are prepared and dispatched with care.
+</li>
+
+<li>
+Contact us through WhatsApp for order and delivery questions.
+</li>
+
+</ul>
+
 </div>
+
+
+<div class="shipping-box">
+
+<h3>💳 Payment Methods</h3>
+
+<ul>
+
+<li>Cash on Delivery (COD)</li>
+
+<li>Card Payments</li>
+
+<li>
+Contact us for available payment options and order details.
+</li>
+
+</ul>
+
 </div>
+
+</div>
+
 </section>
 
 
 <!-- CONTACT -->
 <section id="contact">
+
 <div class="section-title">
-    <h2>Contact Lora99</h2>
-    <p>Have a question or want to order? Send us a message.</p>
+
+<h2>Contact Lora99</h2>
+
+<p>
+Have a question or want to order? Send us a message.
+</p>
+
 </div>
+
 
 <div class="contact-container">
+
+
+<!-- CONTACT INFO -->
 <div class="contact-info">
-    <h3>Get In Touch</h3>
 
-    <div class="contact-item">
-        <strong>Owners:</strong>
-        W.A. Dilsha Madushani<br>
-        R. Kasuri Kalsari
-    </div>
+<h3>Get In Touch</h3>
 
-    <div class="contact-item">
-        <strong>Email:</strong>
-        <a href="mailto:tharushikashehanw@gmail.com">tharushikashehanw@gmail.com</a>
-    </div>
 
-    <div class="contact-item">
-        <strong>Phone:</strong>
-        <a href="tel:+94789576656">078 957 6656</a>
-    </div>
+<div class="contact-item">
 
-    <div class="contact-item">
-        <strong>WhatsApp Direct:</strong>
-        <a href="https://wa.me/94786477227" target="_blank" rel="noopener noreferrer">+94 78 647 7227</a>
-    </div>
+<strong>Owners:</strong>
 
-    <div class="contact-item">
-        <strong>Address:</strong>
-        Kosnathota, Godakawela, Sri Lanka
-    </div>
+W.A. Dilsha Madushani<br>
+R. Kasuri Kalsari
 
-    <div class="contact-item">
-        <strong>Facebook:</strong>
-        <a href="https://www.facebook.com/share/1Bds9rnUnh/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Lora99 on Facebook</a>
-    </div>
-
-    <div class="contact-item">
-        <strong>TikTok:</strong>
-        <a href="https://www.tiktok.com/@premiumquality60?_r=1&_t=ZS-98hTaW8iIbg" target="_blank" rel="noopener noreferrer">Lora99 on TikTok</a>
-    </div>
-
-    <div class="quick-buttons">
-        <a href="tel:+94789576656">📞 Call</a>
-        <a href="https://wa.me/94786477227" target="_blank" rel="noopener noreferrer">💬 Direct Chat</a>
-        <a href="https://chat.whatsapp.com/FsQQHREP9tdDtXYUSfQdkl?s=cl&p=i&ilr=2&amv=0" target="_blank" rel="noopener noreferrer" style="background: #25D366; color: white; border: none; grid-column: span 2;">👥 Join WhatsApp Group</a>
-        <a href="mailto:tharushikashehanw@gmail.com">✉ Email</a>
-        <a href="https://www.google.com/maps/search/?api=1&query=Kosnathota%2C%20Godakawela%2C%20Sri%20Lanka" target="_blank" rel="noopener noreferrer">📍 Location</a>
-    </div>
 </div>
 
+
+<div class="contact-item">
+
+<strong>Email:</strong>
+
+<a href="mailto:tharushikashehanw@gmail.com">
+tharushikashehanw@gmail.com
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>Phone:</strong>
+
+<a href="tel:+94789576656">
+078 957 6656
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>WhatsApp Direct:</strong>
+
+<a href="https://wa.me/94786477227"
+target="_blank">
+
++94 78 647 7227
+
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>Address:</strong>
+
+Kosnathota, Godakawela, Sri Lanka
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>Facebook:</strong>
+
+<a href="https://www.facebook.com/share/1Bds9rnUnh/?mibextid=wwXIfr"
+target="_blank">
+
+Lora99 on Facebook
+
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>TikTok:</strong>
+
+<a href="https://www.tiktok.com/@premiumquality60?_r=1&_t=ZS-98hTaW8iIbg"
+target="_blank">
+
+Lora99 on TikTok
+
+</a>
+
+</div>
+
+
+<div class="quick-buttons">
+
+<a href="tel:+94789576656">
+📞 Call
+</a>
+
+<a href="https://wa.me/94786477227"
+target="_blank">
+
+💬 Direct Chat
+
+</a>
+
+
+<a href="https://chat.whatsapp.com/FsQQHREP9tdDtXYUSfQdkl?s=cl&p=i&ilr=2&amv=0"
+target="_blank"
+style="background:#25D366;color:white;grid-column:span 2">
+
+👥 Join WhatsApp Group
+
+</a>
+
+
+<a href="mailto:tharushikashehanw@gmail.com">
+✉ Email
+</a>
+
+
+<a href="https://www.google.com/maps/search/?api=1&query=Kosnathota%2C%20Godakawela%2C%20Sri%20Lanka"
+target="_blank">
+
+📍 Location
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- CONTACT FORM -->
 <div class="contact-form">
-    <h3>Send Us a Message</h3>
 
-    <form onsubmit="sendToWhatsApp(event)">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <input type="tel" id="visitorPhone" placeholder="Your Phone Number">
+<h3>Send Us a Message</h3>
 
-        <select id="selectedItem">
-            <option value="">Select an Item / Dress (Optional)</option>
-            <option value="Collection 01 (WA0001) - Rs. 3,300">Collection 01 (WA0001) - Rs. 3,300</option>
-            <option value="Collection 02 (WA0002) - Rs. 2,800">Collection 02 (WA0002) - Rs. 2,800</option>
-            <option value="Collection 03 (WA0003) - Rs. 2,800">Collection 03 (WA0003) - Rs. 2,800</option>
-            <option value="Collection 04 (WA0004) - Rs. 3,700">Collection 04 (WA0004) - Rs. 3,700</option>
-            <option value="Collection 05 (WA0005) - Rs. 2,200">Collection 05 (WA0005) - Rs. 2,200</option>
-            <option value="Collection 06 (WA0006) - Rs. 2,200">Collection 06 (WA0006) - Rs. 2,200</option>
-            <option value="General Inquiry / Other">General Inquiry / Other</option>
-        </select>
+<form onsubmit="sendToWhatsApp(event)">
 
-        <textarea id="message" rows="5" placeholder="Your Message (e.g., Preferred size, color or delivery info)" required></textarea>
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+required
+>
 
-        <button type="submit" class="whatsapp-button">💬 Send via WhatsApp</button>
-        <p class="form-note">Your message will open in WhatsApp ready to send to Lora99.</p>
-    </form>
+<input
+type="email"
+id="email"
+placeholder="Your Email"
+required
+>
+
+<input
+type="tel"
+id="visitorPhone"
+placeholder="Your Phone Number"
+>
+
+
+<select id="selectedItem">
+
+<option value="">
+Select an Item / Dress (Optional)
+</option>
+
+<option value="Collection 01 (WA0001) - Rs. 3,300">
+Collection 01 (WA0001) - Rs. 3,300
+</option>
+
+<option value="Collection 02 (WA0002) - Rs. 2,800">
+Collection 02 (WA0002) - Rs. 2,800
+</option>
+
+<option value="Collection 03 (WA0003) - Rs. 2,800">
+Collection 03 (WA0003) - Rs. 2,800
+</option>
+
+<option value="Collection 04 (WA0004) - Rs. 3,700">
+Collection 04 (WA0004) - Rs. 3,700
+</option>
+
+<option value="General Inquiry / Other">
+General Inquiry / Other
+</option>
+
+</select>
+
+
+<textarea
+id="message"
+rows="5"
+placeholder="Your Message (e.g., Preferred size, color or delivery info)"
+required>
+</textarea>
+
+
+<button
+type="submit"
+class="whatsapp-button">
+
+💬 Send via WhatsApp
+
+</button>
+
+<p class="form-note">
+Your message will open in WhatsApp ready to send to Lora99.
+</p>
+
+</form>
+
 </div>
+
 </div>
+
 </section>
 
 
 <!-- FOOTER -->
 <footer>
-    <img src="logo.jpg" alt="Lora99 Logo" class="footer-logo">
-    <h2>Lora99</h2>
-    <p>Redefining Everyday Elegance for Women.</p>
-    <p>Kosnathota, Godakawela, Sri Lanka</p>
 
-    <div class="social-links">
-        <a href="https://www.facebook.com/share/1Bds9rnUnh/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <a href="https://www.tiktok.com/@premiumquality60?_r=1&_t=ZS-98hTaW8iIbg" target="_blank" rel="noopener noreferrer">TikTok</a>
-        <a href="https://chat.whatsapp.com/FsQQHREP9tdDtXYUSfQdkl?s=cl&p=i&ilr=2&amv=0" target="_blank" rel="noopener noreferrer">WhatsApp Group</a>
-    </div>
+<img
+src="logo.jpg"
+alt="Lora99 Logo"
+class="footer-logo"
+>
 
-    <p style="margin-top:20px;">© 2026 Lora99. All Rights Reserved.</p>
+<h2>Lora99</h2>
+
+<p>
+Redefining Everyday Elegance for Women.
+</p>
+
+<p>
+Kosnathota, Godakawela, Sri Lanka
+</p>
+
+
+<div class="social-links">
+
+<a href="https://www.facebook.com/share/1Bds9rnUnh/?mibextid=wwXIfr"
+target="_blank">
+
+Facebook
+
+</a>
+
+
+<a href="https://www.tiktok.com/@premiumquality60?_r=1&_t=ZS-98hTaW8iIbg"
+target="_blank">
+
+TikTok
+
+</a>
+
+
+<a href="https://chat.whatsapp.com/FsQQHREP9tdDtXYUSfQdkl?s=cl&p=i&ilr=2&amv=0"
+target="_blank">
+
+WhatsApp Group
+
+</a>
+
+</div>
+
+
+<p style="margin-top:20px">
+© 2026 Lora99. All Rights Reserved.
+</p>
+
 </footer>
 
 
-<!-- JAVASCRIPT FOR CART AND WHATSAPP -->
+<!-- JAVASCRIPT -->
 <script>
-let cart = [];
 
-function selectSize(btn) {
-    let parent = btn.parentElement;
-    let buttons = parent.querySelectorAll('.size-btn');
-    buttons.forEach(b => b.classList.remove('active'));
+let cart=[];
+
+
+/* SIZE SELECT */
+function selectSize(btn){
+
+    let p=btn.parentElement;
+
+    p.querySelectorAll('.size-btn')
+    .forEach(b=>b.classList.remove('active'));
+
     btn.classList.add('active');
 }
 
-function addToCart(title, price, img, sizeContainerId) {
-    let container = document.getElementById(sizeContainerId);
-    let selectedSize = container.querySelector('.size-btn.active').innerText;
 
-    cart.push({ title, price, img, size: selectedSize });
+/* ADD TO CART */
+function addToCart(title,price,img,sizeId){
+
+    let c=document.getElementById(sizeId);
+
+    let size=c.querySelector('.size-btn.active').innerText;
+
+    cart.push({
+        title:title,
+        price:price,
+        img:img,
+        size:size
+    });
+
     updateCartUI();
+
     toggleCart();
 }
 
-function updateCartUI() {
-    document.getElementById('cartCount').innerText = cart.length;
-    let cartItemsContainer = document.getElementById('cartItems');
-    cartItemsContainer.innerHTML = '';
-    let total = 0;
 
-    cart.forEach((item, index) => {
-        total += item.price;
-        cartItemsContainer.innerHTML += `
-            <div class="cart-item">
-                <img src="${item.img}" alt="${item.title}">
-                <div class="cart-item-info">
-                    <h4>${item.title}</h4>
-                    <p>Size: <strong>${item.size}</strong></p>
-                    <div class="price">Rs. ${item.price.toLocaleString()}</div>
-                    <span class="remove-item" onclick="removeFromCart(${index})">Remove</span>
+/* UPDATE CART */
+function updateCartUI(){
+
+    document.getElementById('cartCount').innerText=cart.length;
+
+    let box=document.getElementById('cartItems');
+
+    box.innerHTML='';
+
+    let total=0;
+
+
+    cart.forEach((item,i)=>{
+
+        total+=item.price;
+
+
+        box.innerHTML+=`
+
+        <div class="cart-item">
+
+            <img
+            src="${item.img}"
+            alt="${item.title}"
+            >
+
+            <div class="cart-item-info">
+
+                <h4>
+                ${item.title}
+                </h4>
+
+                <p>
+                Size:
+                <strong>
+                ${item.size}
+                </strong>
+                </p>
+
+                <div class="price">
+                Rs. ${item.price.toLocaleString()}
                 </div>
+
+                <span
+                class="remove-item"
+                onclick="removeFromCart(${i})">
+
+                Remove
+
+                </span>
+
             </div>
+
+        </div>
+
         `;
+
     });
 
-    document.getElementById('cartTotal').innerText = 'Rs. ' + total.toLocaleString();
+
+    document.getElementById('cartTotal').innerText=
+    'Rs. '+total.toLocaleString();
 }
 
-function removeFromCart(index) {
-    cart.splice(index, 1);
+
+/* REMOVE CART ITEM */
+function removeFromCart(i){
+
+    cart.splice(i,1);
+
     updateCartUI();
 }
 
-function toggleCart() {
-    document.getElementById('cartDrawer').classList.toggle('open');
-    document.getElementById('cartOverlay').classList.toggle('show');
+
+/* TOGGLE CART */
+function toggleCart(){
+
+    document
+    .getElementById('cartDrawer')
+    .classList.toggle('open');
+
+    document
+    .getElementById('cartOverlay')
+    .classList.toggle('show');
 }
 
-function checkoutWhatsApp() {
-    if (cart.length === 0) {
-        alert("Your cart is empty!");
+
+/* WHATSAPP CHECKOUT */
+function checkoutWhatsApp(){
+
+    if(!cart.length){
+
+        alert('Your cart is empty!');
+
         return;
     }
 
-    let phone = "94786477227";
-    let message = "🌸 *NEW ORDER FROM LORA99 WEBSITE*\n\n";
-    let total = 0;
 
-    cart.forEach((item, i) => {
-        message += `${i + 1}. *${item.title}*\n   - Size: ${item.size}\n   - Price: Rs. ${item.price.toLocaleString()}\n\n`;
-        total += item.price;
+    let msg=
+    '🌸 *NEW ORDER FROM LORA99 WEBSITE*\\n\\n';
+
+    let total=0;
+
+
+    cart.forEach((x,i)=>{
+
+        msg+=
+        `${i+1}. *${x.title}*\\n`+
+        `   - Size: ${x.size}\\n`+
+        `   - Price: Rs. ${x.price.toLocaleString()}\\n\\n`;
+
+        total+=x.price;
+
     });
 
-    message += `💰 *Total Amount: Rs. ${total.toLocaleString()}*\n\n`;
-    message += "Please let me know how to proceed with payment & delivery.";
 
-    let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
-    window.open(url, "_blank");
+    msg+=
+    `💰 *Total Amount: Rs. ${total.toLocaleString()}*\\n\\n`+
+    `Please let me know how to proceed with payment & delivery.`;
+
+
+    window.open(
+        'https://wa.me/94786477227?text='+
+        encodeURIComponent(msg),
+        '_blank'
+    );
 }
 
-function sendToWhatsApp(contentEvent) {
-    contentEvent.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("visitorPhone").value.trim();
-    const selectedItem = document.getElementById("selectedItem").value;
-    const message = document.getElementById("message").value.trim();
+/* CONTACT FORM TO WHATSAPP */
+function sendToWhatsApp(e){
 
-    const whatsappNumber = "94786477227";
+    e.preventDefault();
 
-    let whatsappMessage = "🌸 Lora99 Website Enquiry\n\n" +
-        "👤 Name: " + name + "\n" +
-        "📧 Email: " + email + "\n" +
-        "📱 Phone: " + (phone || "Not provided") + "\n";
 
-    if (selectedItem) {
-        whatsappMessage += "👗 Selected Item: " + selectedItem + "\n";
+    let name=
+    document.getElementById('name').value.trim();
+
+    let email=
+    document.getElementById('email').value.trim();
+
+    let phone=
+    document.getElementById('visitorPhone').value.trim();
+
+    let item=
+    document.getElementById('selectedItem').value;
+
+    let message=
+    document.getElementById('message').value.trim();
+
+
+    let msg=
+    '🌸 Lora99 Website Enquiry\\n\\n'+
+    '👤 Name: '+name+'\\n'+
+    '📧 Email: '+email+'\\n'+
+    '📱 Phone: '+(phone||'Not provided')+'\\n';
+
+
+    if(item){
+
+        msg+=
+        '👗 Selected Item: '+item+'\\n';
+
     }
 
-    whatsappMessage += "💬 Message: " + message;
 
-    const whatsappURL = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(whatsappMessage);
-    window.open(whatsappURL, "_blank");
+    msg+=
+    '💬 Message: '+message;
+
+
+    window.open(
+        'https://wa.me/94786477227?text='+
+        encodeURIComponent(msg),
+        '_blank'
+    );
+
 }
+
 </script>
 
 </body>
